@@ -89,6 +89,7 @@ export default class Human {
     this.human = this.resources.items.human.scene.children[0];
     this.human.scale.set(0.1, 0.1, 0.1);
     this.human.geometry.center();
+    this.human.position.y = -0.65;
     this.human.geometry.rotateY(-Math.PI * 0.5);
     this.human.material = this.m;
     this.scene.add(this.human);
